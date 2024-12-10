@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de las Siete y Media</title>
+    <link rel="stylesheet" href="src/style.css"/>
+  </head>
+  <body>
+    <div class="contenedor-juego">
+      <h1>Juego de las Siete y Media</h1>
+      <div id="contenedor-puntuacion">
+        <p>Puntuación: <span id="puntaje">0</span></p>
+      </div>
+      <div id="contenedor-cartas">
+        <img id="carta-actual" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg" alt="Carta Actual">
+      </div>
+      <div class="contenedor-botones">
+        <button id="pido-carta">Pedir Carta</button>
+        <button id="pido-plantarme">Me Planto</button>
+      </div>
+      <div id="mensaje"></div>
+      <div class="contenedor-nueva-partida">
+        <button id="nueva-partida" style="display: none;">Nueva Partida</button>
+      </div>
+      
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</html>
