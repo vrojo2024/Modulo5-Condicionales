@@ -1,8 +1,8 @@
 /* Estilos globales para el cuerpo de la página */
 body {   
-  font-family: Arial, sans-serif;   /* Le indico la tipografía del body*/
-  background-color: #f0f0f0;       /* El color de fondo */
-  color: #ffffff;                   /* El color del texto en blanco */
+  font-family: Arial, sans-serif;   /* Establece la tipografía general a Arial o sans-serif */
+  background-color: #f0f0f0;       /* Establece un color de fondo claro (gris muy suave) */
+  color: #ffffff;                   /* Establece el color del texto en blanco */
   text-align: center;               /* Centra el texto en el cuerpo de la página */
   margin: 0;                        /* Elimina los márgenes por defecto alrededor del cuerpo */
   padding: 0;                       /* Elimina el padding por defecto */
@@ -10,43 +10,36 @@ body {
 
 /* Estilo para el contenedor principal del juego */
 .contenedor-juego {   
-  margin: 50px auto;                /* Margen superior de 50px y centra el contenedor horizontalmente */
-  width: 90%;                       /* Ancho del contenedor al 90% del tamaño de la pantalla */
-  max-width: 400px;                 /* Ancho máximo de 400px */
-  background: #095e3a;            /* Fondo verde oscuro para el contenedor del juego */
-  padding: 40px;                    /* Padding de 40px dentro del contenedor */
+  margin: 50px auto;                /* Añade un margen superior de 50px y centra el contenedor horizontalmente */
+  width: 90%;                       /* Establece el ancho del contenedor al 90% del tamaño de la pantalla */
+  max-width: 400px;                 /* Establece un ancho máximo de 400px */
+  background: #095e3a;              /* Fondo verde oscuro para el contenedor */
+  padding: 40px;                    /* Añade un padding de 40px dentro del contenedor */
   border-radius: 10px;              /* Bordes redondeados de 10px para suavizar la apariencia */
-
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del contenedor */
 }
 
 /* Estilo para las imágenes de las cartas */
 #contenedor-cartas img {   
-  width: 150px;                     /* Establece un ancho fijo de 150px para cada carta */
+  width: 150px;                     /* Establece un ancho fijo de 150px para las imágenes */
   height: auto;                     /* Mantiene la proporción original de la altura */
-  margin: 20px auto;                /* Margen de 20px arriba y abajo, y centra horizontalmente */
-  border-radius: 11px;              /* Bordes redondeados de 11px para las cartas, ya que sino se veía el fondo blanco */
+  margin: 20px auto;                /* Añade un margen de 20px arriba y abajo, y centra horizontalmente */
+  border-radius: 11px;              /* Bordes redondeados de 11px para las cartas */
 }
 
 /* Estilo para el contenedor de los botones */
 .contenedor-botones {   
-  padding: 30px;                    /* Padding de 30px alrededor del contenedor */
+  padding: 30px;                    /* Añade un padding de 30px alrededor del contenedor */
   display: flex;                    /* Utiliza Flexbox para organizar los botones */
   justify-content: center;          /* Centra los botones dentro del contenedor */
   gap: 20px;                        /* Añade un espacio de 20px entre los botones */
-  font-size: 60px;                  /* Establece el tamaño de la fuente de los botones */
+  font-size: 16px;                  /* Establece el tamaño de la fuente de los botones */
   border-radius: 5px;               /* Bordes redondeados de 5px para el contenedor de los botones */
+  cursor: pointer;                 /* Cambia el cursor a puntero al pasar sobre los botones */
   background-color: #095e3a;        /* Fondo verde oscuro para el contenedor de los botones */
   color: white;                     /* Color blanco para el texto de los botones */
-  
 }
 
-#pido-carta {
-  cursor: pointer;                 /* Cambia el cursor a puntero al pasar sobre el botón */
-}
-
-#pido-plantarme {
-  cursor: pointer;                 /* Cambia el cursor a puntero al pasar sobre el botón */
-}
 /* Estilo para el contenedor del botón de nueva partida */
 .contenedor-nueva-partida {
   display: flex;                    /* Utiliza Flexbox para organizar el botón */
@@ -71,7 +64,6 @@ body {
 /* Estilo para el botón de "Nueva Partida" al pasar el mouse (hover) */
 #nueva-partida:hover {
   background-color: #50b98d;        /* Cambia el color de fondo a un verde más claro cuando se pasa el mouse */
-  cursor: pointer;                 /* Cambia el cursor a puntero al pasar sobre los botones */
 }
 
 /* Estilo para el mensaje de fin de juego o notificaciones */
